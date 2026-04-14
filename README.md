@@ -39,6 +39,8 @@ Manual validation of these large datasets is time-consuming and error-prone. Thi
 - Merged reference tables for municipalities, property classes, and tax rates.
 - Implemented a layered ETL architecture:
 
+Property_Assessment → Validation_Base → Clean_Data → Data_Quality_Issues → Dashboard
+
 ### 3. Data Quality Validation Checks
 The following validation rules were implemented:
 
@@ -84,12 +86,12 @@ An interactive Excel dashboard was designed to provide real-time insights, inclu
 ### 🔹 Key Performance Indicators (KPIs)
 - Total Records
 - Valid Records (%)
+- Incomplete Records
+- Duplicate Municipality Codes
 - Records with Issues (%)
 - Tax Mismatches
-- Duplicate Roll Numbers
 - Invalid Municipality Codes
 - Outliers
-- Incomplete Records
 
 ### 🔹 Visualizations
 - **Issues by Municipality**
@@ -123,8 +125,7 @@ An interactive Excel dashboard was designed to provide real-time insights, inclu
 
 ## 📁 Repository Structure
 
-Property-Tax-Data-Quality-Dashboard/
-│
+Property-Tax-Data-Quality-Dashboard
 ├── Property_Tax_Data_Quality_Dashboard.xlsx
 ├── dashboard_screenshot.png
 └── README.md
