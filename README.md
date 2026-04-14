@@ -78,7 +78,7 @@ An interactive Excel dashboard was designed to provide real-time insights, inclu
 
 ---
 
-## 📊 Dashboard Features
+## 📊 Dashboard
 
 <img width="348" height="355" alt="PT Dashboard" src="https://github.com/user-attachments/assets/dc81b3fa-96d1-4709-8a9a-6616f4f80560" />
 
