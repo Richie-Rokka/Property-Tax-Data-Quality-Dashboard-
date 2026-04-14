@@ -126,8 +126,11 @@ An interactive Excel dashboard was designed to provide real-time insights, inclu
 ## 📁 Repository Structure
 
 Property-Tax-Data-Quality-Dashboard
+
 ├── Property_Tax_Data_Quality_Dashboard.xlsx
+
 ├── dashboard_screenshot.png
+
 └── README.md
 
 ---
