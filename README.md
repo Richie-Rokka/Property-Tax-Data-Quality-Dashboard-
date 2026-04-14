@@ -56,3 +56,63 @@ The following validation rules were implemented:
 
 ### 4. Outlier Detection
 Outliers were identified using the Z-score formula:
+
+Z = (Assessed_Value - Mean) / Standard_Deviation
+
+Records with **|Z| > 3** were flagged for review.
+
+### 5. Exception Reporting
+A dedicated **Data_Quality_Issues** layer isolates all records failing one or more validation checks. An **Issue_Reason** column provides clear explanations for each flagged record.
+
+### 6. Dashboard Development
+An interactive Excel dashboard was designed to provide real-time insights, including:
+- KPI cards summarizing data quality metrics
+- Issue distribution by municipality and property class
+- Data quality issue breakdown
+- Average assessed property values
+- Top 10 exception records
+- Slicers for dynamic filtering
+- A narrative “Key Insights” section
+
+---
+
+## 📊 Dashboard Features
+
+### 🔹 Key Performance Indicators (KPIs)
+- Total Records
+- Valid Records (%)
+- Records with Issues (%)
+- Tax Mismatches
+- Duplicate Roll Numbers
+- Invalid Municipality Codes
+- Outliers
+- Incomplete Records
+
+### 🔹 Visualizations
+- **Issues by Municipality**
+- **Issues by Property Class**
+- **Data Quality Issue Breakdown**
+- **Average Assessed Property Value by Class**
+- **Top 10 Data Quality Exceptions**
+
+### 🔹 Interactivity
+- Slicers for Municipality, Assessment Year, and Property Class
+- Dynamic KPI updates upon data refresh
+
+---
+
+## 📈 Key Insights
+- **77%** of records are valid, indicating generally strong data quality.
+- **Tax mismatches** are the most prevalent issue, affecting **9.4%** of records.
+- **Toronto and Ottawa** exhibit the highest concentration of data quality issues.
+- **Multi-residential properties** show the highest average assessed values.
+- Automated validation significantly reduces manual data quality checks.
+
+---
+
+## 🚀 Impact
+- **80% reduction** in manual data validation effort.
+- Improved **data accuracy and governance**.
+- Enhanced **decision-making** through interactive visualizations.
+- Scalable and reusable **ETL framework** for future datasets.
+
