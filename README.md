@@ -116,3 +116,39 @@ An interactive Excel dashboard was designed to provide real-time insights, inclu
 - Enhanced **decision-making** through interactive visualizations.
 - Scalable and reusable **ETL framework** for future datasets.
 
+---
+
+## 📁 Repository Structure
+
+Property-Tax-Data-Quality-Dashboard/
+│
+├── Property_Tax_Data_Quality_Dashboard.xlsx
+├── dashboard_screenshot.png
+└── README.md
+
+---
+
+## 🧠 Skills Demonstrated
+- Data Quality Assurance & Governance
+- ETL Development with Power Query
+- Data Cleaning and Validation
+- Statistical Analysis and Outlier Detection
+- Data Visualization and Dashboard Design
+- Stakeholder Communication
+
+---
+
+## 💼 Relevance to Public Sector Analytics
+This project aligns closely with the competencies required for **Data and Quality Analyst** roles, particularly in supporting property tax and assessment data validation and governance initiatives.
+
+---
+
+## 📬 Contact
+**Abodunrin Oketade**  
+📍 Niagara Region, Ontario, Canada  
+🔗 **GitHub:** https://github.com/Richie-Rokka  
+🔗 **LinkedIn:** www.linkedin.com/in/abodunrin-oketade-579aa331  
+
+---
+
+⭐ *If you found this project insightful, feel free to star the repository!*
