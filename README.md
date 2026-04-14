@@ -129,7 +129,7 @@ Property-Tax-Data-Quality-Dashboard
 
 ├── Property_Tax_Data_Quality_Dashboard.xlsx
 
-├── dashboard_screenshot.png
+├── PT Dashboard.png
 
 └── README.md
 
