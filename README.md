@@ -80,7 +80,7 @@ An interactive Excel dashboard was designed to provide real-time insights, inclu
 
 ## 📊 Dashboard
 
-<img width="348" height="355" alt="PT Dashboard" src="https://github.com/user-attachments/assets/dc81b3fa-96d1-4709-8a9a-6616f4f80560" />
+<img width="344" height="353" alt="PT Dashboard" src="https://github.com/user-attachments/assets/eeee7bba-a7ae-471c-ab52-8b89e8d0d059" />
 
 
 ### 🔹 Key Performance Indicators (KPIs)
