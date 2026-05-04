@@ -155,7 +155,6 @@ The dashboard provides:
 - 🔄 Automate ETL pipeline (scheduled ingestion)
 - 🤖 Introduce anomaly detection using ML models
 - 📡 Enable near real-time data quality monitoring
-- 🌐 Deploy dashboard via Power BI Service or web app
 - 🧾 Expand to multi-region property tax benchmarking
 - 📊 Add SLA-based data quality thresholds & alerts
   
