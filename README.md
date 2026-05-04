@@ -41,8 +41,38 @@ Manual validation of these large datasets is time-consuming and error-prone. Thi
 
 Property_Assessment → Validation_Base → Clean_Data → Data_Quality_Issues → Dashboard
 
-### 3. Data Quality Validation Checks
-The following validation rules were implemented:
+### 3. Data Quality Validation Checks Implemented
+
+- Duplicate Detection (Roll Number)
+- Tax Amount Validation
+- Municipality Validation
+- Missing Value Checks
+- Code Standardization
+
+```text
+import pandas as pd
+
+df = pd.read_csv("data/processed/cleaned_data.csv")
+
+# Check duplicates
+duplicates = df[df.duplicated(subset=["roll_number"])]
+
+# Check missing values
+missing = df.isnull().sum()
+
+# Tax mismatch example
+mismatch = df[df["calculated_tax"] != df["recorded_tax"]]
+
+print("Duplicates:", len(duplicates))
+print("Missing Values:\n", missing)
+print("Tax Mismatches:", len(mismatch))
+```
+
+### 📈 Key Findings
+
+- 22.2% records contained data quality issues  
+- 9.4% tax mismatches identified  
+- Duplicate entries detected across records  
 
 | Validation | Description |
 |-----------|-------------|
@@ -115,12 +145,16 @@ An interactive Excel dashboard was designed to provide real-time insights, inclu
 
 ---
 
-## 🚀 Impact
+## 🚀 Business Impact
 - **80% reduction** in manual data validation effort.
+- Improved **data reliability**
 - Improved **data accuracy and governance**.
 - Enhanced **decision-making** through interactive visualizations.
 - Scalable and reusable **ETL framework** for future datasets.
+- Enabled targeted data cleansing.
+- Reduced risk of incorrect reporting.
 
+> Data quality is not a reporting issue — it is a decision risk.
 ---
 
 ## 📁 Repository Structure
@@ -154,7 +188,7 @@ This project aligns closely with the competencies required for **Data and Qualit
 **Abodunrin Oketade**  
 📍 Niagara Region, Ontario, Canada  
 🔗 **GitHub:** https://github.com/Richie-Rokka  
-🔗 **LinkedIn:** www.linkedin.com/in/abodunrin-oketade-579aa331  
+🔗 **LinkedIn:** www.linkedin.com/in/abodunrin-oketade
 
 ---
 
