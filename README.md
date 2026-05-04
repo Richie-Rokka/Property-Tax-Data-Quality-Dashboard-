@@ -5,7 +5,7 @@
 
 ## 📊 Dashboard Preview
 
-![Data Quality Dashboard](PT Dashboard.png)
+![Data Quality Dashboard](./PT Dashboard.png)
 
 ---
 
