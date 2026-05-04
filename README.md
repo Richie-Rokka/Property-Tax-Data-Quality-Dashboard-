@@ -191,9 +191,15 @@ assets/
 | property_type  | Classification of property |
 
 ---
-## 📬 Contact
-**Abodunrin Oketade**  
-📍 Greater Toronto Area, Ontario, Canada  
+
+## 👤 Author
+
+### Abodunrin (Richard) Oketade
+
+Data Analyst | Business Intelligence | Data Quality & Analytics
+
+> “Turning data into business decisions.”
+
 🔗 **GitHub:** https://github.com/Richie-Rokka  
 🔗 **LinkedIn:** www.linkedin.com/in/abodunrin-oketade
 
