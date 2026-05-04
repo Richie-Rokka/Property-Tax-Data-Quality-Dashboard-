@@ -1,153 +1,110 @@
-# 🏡 Property Tax & Assessment Data Quality Dashboard
-
-## 📊 Dashboard Preview
-
-![Dashboard](<img width="344" height="353" alt="Data Quality   Validation Framework" src="https://github.com/user-attachments/assets/347c8b62-c553-4450-a5e4-a70c36891574" />
-)
-
-## 📌 Project Overview
-This project presents an end-to-end **data quality and validation solution** for municipal property tax and assessment datasets. Leveraging **Power Query**, **Excel**, and **interactive dashboarding**, the solution automates the detection of data inconsistencies, enhances governance, and supports evidence-based decision-making.
-
-The dashboard enables stakeholders to monitor data integrity, identify anomalies, and prioritize remediation efforts through intuitive visualizations and exception reporting.
+# 📊 Property Tax & Assessment Data Quality Dashboard  
+**Identifying Data Quality Risks to Improve Reporting Accuracy and Decision-Making**
 
 ---
 
-## 🎯 Problem Statement
-Municipal property assessment data is often prone to quality issues such as:
-- Duplicate roll numbers
-- Invalid municipality or property class codes
-- Tax calculation mismatches
-- Missing or incomplete records
-- Statistical outliers in assessed property values
+## 📊 Dashboard Preview
 
-Manual validation of these large datasets is time-consuming and error-prone. This project addresses these challenges by implementing an **automated and scalable data quality framework**.
+![Data Quality Dashboard](assets/images/dashboard.png)
+
+---
+
+## 🚀 Overview
+
+This project analyzes property tax and assessment data to identify data quality issues that can impact reporting accuracy, financial calculations, and decision-making.
+
+Using a structured validation framework, I identified that **22.2% of records contained data quality issues**, including tax mismatches, duplicate entries, and missing values.
+
+> 💡 **Key Insight:** Data quality is not just a technical issue — it is a **business risk** that directly affects decision reliability.
+
+---
+
+## 🎯 Business Problem
+
+Organizations rely on property tax data for:
+- Financial reporting  
+- Revenue planning  
+- Policy and operational decisions  
+
+However, **poor data quality can lead to:**
+- Incorrect tax calculations  
+- Duplicate or inconsistent records  
+- Misinformed business decisions  
+
+---
+
+## 🔍 Objective
+
+To design a **data quality validation framework** that:
+- Detects inconsistencies and errors  
+- Quantifies data quality issues  
+- Improves overall data reliability  
+
+---
+
+## 🧱 Dataset
+
+The dataset contains structured property-level data, including:
+- Roll Number (Unique Identifier)  
+- Municipality  
+- Recorded Tax Amount  
+- Calculated Tax Value  
+- Property Classification  
 
 ---
 
 ## 🛠️ Tools & Technologies
-- **Microsoft Excel**
-- **Power Query (ETL & Data Transformation)**
-- **Pivot Tables & Pivot Charts**
-- **Data Validation Techniques**
-- **Statistical Analysis (Z-score for Outlier Detection)**
-- **Interactive Dashboard Design**
+
+- **Excel / Power Query** → Data cleaning & transformation  
+- **Power BI** → Dashboard & visualization  
+- **Python (Pandas)** → Data validation & quality checks  
 
 ---
 
-## 🔄 Methodology
+## 🔍 Data Quality Framework
 
-### 1. Data Preparation
-- Structured raw datasets into Excel tables.
-- Imported data into Power Query for transformation and validation.
+The following validation checks were implemented:
 
-### 2. Data Transformation & Integration
-- Merged reference tables for municipalities, property classes, and tax rates.
-- Implemented a layered ETL architecture:
+### 1. Duplicate Detection
+- Identified duplicate **roll numbers**
+- Prevents overcounting and data redundancy  
 
-Property_Assessment → Validation_Base → Clean_Data → Data_Quality_Issues → Dashboard
+### 2. Tax Validation
+- Compared **recorded vs calculated tax values**
+- Detected inconsistencies in tax calculations  
 
-### 3. Data Quality Validation Checks Implemented
+### 3. Missing Value Checks
+- Identified incomplete records  
+- Ensured dataset completeness  
 
-- Duplicate Detection (Roll Number)
-- Tax Amount Validation
-- Municipality Validation
-- Missing Value Checks
-- Code Standardization
+### 4. Municipality Validation
+- Checked for invalid or inconsistent location entries  
 
-```text
+### 5. Data Standardization
+- Ensured consistent formats across fields  
+
+---
+
+## 🧪 Validation Logic (Python)
+
+```python
 import pandas as pd
 
 df = pd.read_csv("data/processed/cleaned_data.csv")
 
-# Check duplicates
+# Duplicate detection
 duplicates = df[df.duplicated(subset=["roll_number"])]
 
-# Check missing values
+# Missing values
 missing = df.isnull().sum()
 
-# Tax mismatch example
+# Tax mismatch
 mismatch = df[df["calculated_tax"] != df["recorded_tax"]]
 
 print("Duplicates:", len(duplicates))
 print("Missing Values:\n", missing)
 print("Tax Mismatches:", len(mismatch))
 ```
-
-### 📈 Key Findings
-
-- 22.2% records contained data quality issues  
-- 9.4% tax mismatches identified  
-- Duplicate entries detected across records  
-
-| Validation | Description |
-|-----------|-------------|
-| Municipality_Code_Check | Verifies municipality codes against reference data |
-| Municipality_Name_Check | Ensures consistency between code and name |
-| Property_Class_Check | Validates property classifications |
-| Tax_Check | Confirms assessed tax calculations |
-| Duplicate_Check | Identifies duplicate roll numbers |
-| Postal_Code_Check | Validates postal code format |
-| Sale_Date_Check | Ensures valid and logical dates |
-| Completeness_Check | Detects missing or null values |
-| Outlier_Check | Identifies anomalous assessed values using Z-score |
-
-### 4. Outlier Detection
-Outliers were identified using the Z-score formula:
-
-Z = (Assessed_Value - Mean) / Standard_Deviation
-
-Records with **|Z| > 3** were flagged for review.
-
-### 5. Exception Reporting
-A dedicated **Data_Quality_Issues** layer isolates all records failing one or more validation checks. An **Issue_Reason** column provides clear explanations for each flagged record.
-
-### 6. Dashboard Development
-An interactive Excel dashboard was designed to provide real-time insights, including:
-- KPI cards summarizing data quality metrics
-- Issue distribution by municipality and property class
-- Data quality issue breakdown
-- Average assessed property values
-- Top 10 exception records
-- Slicers for dynamic filtering
-- A narrative “Key Insights” section
-
----
-
-## 📊 Dashboard
-
-<img width="344" height="353" alt="PT Dashboard" src="https://github.com/user-attachments/assets/eeee7bba-a7ae-471c-ab52-8b89e8d0d059" />
-
-
-### 🔹 Key Performance Indicators (KPIs)
-- Total Records
-- Valid Records (%)
-- Incomplete Records
-- Duplicate Municipality Codes
-- Records with Issues (%)
-- Tax Mismatches
-- Invalid Municipality Codes
-- Outliers
-
-### 🔹 Visualizations
-- **Issues by Municipality**
-- **Issues by Property Class**
-- **Data Quality Issue Breakdown**
-- **Average Assessed Property Value by Class**
-- **Top 10 Data Quality Exceptions**
-
-### 🔹 Interactivity
-- Slicers for Municipality, Assessment Year, and Property Class
-- Dynamic KPI updates upon data refresh
-
----
-
-## 📈 Key Insights
-- **77%** of records are valid, indicating generally strong data quality.
-- **Tax mismatches** are the most prevalent issue, affecting **9.4%** of records.
-- **Toronto and Ottawa** exhibit the highest concentration of data quality issues.
-- **Multi-residential properties** show the highest average assessed values.
-- Automated validation significantly reduces manual data quality checks.
-
 ---
 
 ## 🚀 Business Impact
