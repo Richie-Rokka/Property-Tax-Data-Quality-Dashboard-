@@ -117,18 +117,15 @@ print("Tax Mismatches:", len(mismatch))
 
 ---
 
-## 💡 Business Impact
+## 💼 Business Value
 
-### Data quality issues can lead to:
+This system demonstrates how raw administrative data can be transformed into a governed analytical asset that supports:
 
-- ❌ Incorrect financial reporting
-- ❌ Revenue miscalculations
-- ❌ Reduced trust in data systems
-
-### After applying validation framework:
-- ✅ Improved data reliability
-- ✅ Enabled targeted data cleansing
-- ✅ Increased confidence in reporting
+- ✅ Improved revenue forecasting accuracy
+- ✅ Better policy decision-making
+- ✅ Early detection of data degradation
+- ✅ Increased trust in reporting systems
+- ✅ Reduced manual data validation effort
 
 > 📌 Key Insight: Data quality issues are not reporting errors — they are decision risks.
 
@@ -153,17 +150,23 @@ The dashboard provides:
   
 ---
 
-## 🔮 Future Improvements
-- Automate validation pipeline using SQL/Python
-- Integrate real-time data quality monitoring
-- Add anomaly detection using statistical methods
+## 🔮 Future Enhancements
 
+- 🔄 Automate ETL pipeline (scheduled ingestion)
+- 🤖 Introduce anomaly detection using ML models
+- 📡 Enable near real-time data quality monitoring
+- 🌐 Deploy dashboard via Power BI Service or web app
+- 🧾 Expand to multi-region property tax benchmarking
+- 📊 Add SLA-based data quality thresholds & alerts
+  
 ---
 
 ## 📚 Key Learnings
-- Importance of data validation before analysis
-- How data quality impacts business decisions
-- Designing structured frameworks for data governance
+- Designing data quality frameworks from raw administrative data
+- Translating technical data issues into business KPIs
+- Building monitoring systems instead of static dashboards
+- Structuring analytics projects like real data products
+- Communicating insights for non-technical stakeholders
 
 ---
 
@@ -191,7 +194,7 @@ assets/
 ---
 ## 📬 Contact
 **Abodunrin Oketade**  
-📍 Niagara Region, Ontario, Canada  
+📍 Greater Toronto Area, Ontario, Canada  
 🔗 **GitHub:** https://github.com/Richie-Rokka  
 🔗 **LinkedIn:** www.linkedin.com/in/abodunrin-oketade
 
