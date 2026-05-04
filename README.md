@@ -107,45 +107,86 @@ print("Tax Mismatches:", len(mismatch))
 ```
 ---
 
-## 🚀 Business Impact
-- **80% reduction** in manual data validation effort.
-- Improved **data reliability**
-- Improved **data accuracy and governance**.
-- Enhanced **decision-making** through interactive visualizations.
-- Scalable and reusable **ETL framework** for future datasets.
-- Enabled targeted data cleansing.
-- Reduced risk of incorrect reporting.
-
-> Data quality is not a reporting issue — it is a decision risk.
----
-
-## 📁 Repository Structure
-
-Property-Tax-Data-Quality-Dashboard
-
-├── Property_Tax_Data_Quality_Dashboard.xlsx
-
-├── PT Dashboard.png
-
-└── README.md
+## 📈 Key Findings
+- 22.2% of records contained data quality issues
+- 9.4% tax mismatches identified
+- Duplicate entries detected across records
+- Missing values present in key fields
 
 ---
 
-## 🧠 Skills Demonstrated
-- Data Quality Assurance & Governance
-- ETL Development with Power Query
-- Data Cleaning and Validation
-- Statistical Analysis and Outlier Detection
-- Data Visualization and Dashboard Design
-- Stakeholder Communication
+## 💡 Business Impact
+
+### Data quality issues can lead to:
+
+- ❌ Incorrect financial reporting
+- ❌ Revenue miscalculations
+- ❌ Reduced trust in data systems
+
+### After applying validation framework:
+- ✅ Improved data reliability
+- ✅ Enabled targeted data cleansing
+- ✅ Increased confidence in reporting
+
+> 📌 Key Insight: Data quality issues are not reporting errors — they are decision risks.
 
 ---
 
-## 💼 Relevance to Public Sector Analytics
-This project aligns closely with the competencies required for **Data and Quality Analyst** roles, particularly in supporting property tax and assessment data validation and governance initiatives.
+## 📊 Dashboard Highlights
+
+The dashboard provides:
+
+- Data quality score overview
+- Breakdown of issue types
+- Tax mismatch analysis
+- Duplicate record detection
+- Data completeness tracking
 
 ---
 
+## ⚠️ Limitations
+- Dataset size may limit generalization
+- Validation assumes correct reference logic
+- No external benchmark dataset used
+  
+---
+
+## 🔮 Future Improvements
+- Automate validation pipeline using SQL/Python
+- Integrate real-time data quality monitoring
+- Add anomaly detection using statistical methods
+
+---
+
+## 📚 Key Learnings
+- Importance of data validation before analysis
+- How data quality impacts business decisions
+- Designing structured frameworks for data governance
+
+---
+
+## 📂 Repository Structure
+
+data/
+scripts/
+dashboards/
+outputs/
+docs/
+assets/
+
+---
+
+## 📄 Data Dictionary
+
+| Column         | Description                |
+| -------------- | -------------------------- |
+| roll_number    | Unique property identifier |
+| municipality   | Property location          |
+| recorded_tax   | Reported tax value         |
+| calculated_tax | Expected tax value         |
+| property_type  | Classification of property |
+
+---
 ## 📬 Contact
 **Abodunrin Oketade**  
 📍 Niagara Region, Ontario, Canada  
