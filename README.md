@@ -1,5 +1,10 @@
 # 🏡 Property Tax & Assessment Data Quality Dashboard
 
+## 📊 Dashboard Preview
+
+![Dashboard](<img width="344" height="353" alt="Data Quality   Validation Framework" src="https://github.com/user-attachments/assets/347c8b62-c553-4450-a5e4-a70c36891574" />
+)
+
 ## 📌 Project Overview
 This project presents an end-to-end **data quality and validation solution** for municipal property tax and assessment datasets. Leveraging **Power Query**, **Excel**, and **interactive dashboarding**, the solution automates the detection of data inconsistencies, enhances governance, and supports evidence-based decision-making.
 
