@@ -5,7 +5,7 @@
 
 ## 📊 Dashboard Preview
 
-![Data Quality Dashboard](assets/images/dashboard.png)
+![Data Quality Dashboard](PT Dashboard.png)
 
 ---
 
