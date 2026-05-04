@@ -53,11 +53,13 @@ The dataset contains structured property-level data, including:
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🧰 Analytics Stack
 
-- **Excel / Power Query** → Data cleaning & transformation  
-- **Power BI** → Dashboard & visualization  
-- **Python (Pandas)** → Data validation & quality checks  
+- **Excel** (Core Analysis Environment)
+- **Power Query** (ETL / Data Transformation Layer)
+- **Pivot Tables** (Metric Aggregation Engine)
+- **Excel Dashboards** (Visualization & Reporting Layer)
+- **GitHub** (Documentation & Portfolio Hosting)  
 
 ---
 
